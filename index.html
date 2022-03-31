@@ -1,190 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboatrd</title>
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="style.css">
+	<title>AdminSite</title>
 </head>
 <body>
-    <div class="page-wrapper">
-        <input type="checkbox" name="" id="menu-toggle">
-        <div class="sidebar">
-            <div class="brand">
-                <h3>
-                    <span class="lab la-untappd"></span>
-                        Pacers
-                </h3>
-            </div>
-            
-            <div class="profile-card">
-                <img  class="profile-img" src="img/fadel.jpg">
-                    <div class="profile-info">
-                        <h2>Heather Parker</h2>
-                        <small>Web Architecte</small>
-                    </div>
+	
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand"><img src="uadb.png" alt="" width="85" height="85" style="padding: 10px;margin: 20;position: relative;top:10px"></i><div style="    position: relative;margin-top: 18px;">UADB ADMIN</div> </a>
+		<ul class="side-menu">
+			<li><a href="#" class="active"><i class='bx bxs-dashboard icon' ></i>Dashboard</a></li>
+			<li class="divider" data-text="Administration">Administration</li>
+			<li>
+				<a href="#"><i class='bx bxs-inbox icon' ></i> Gestion des Utilisateurs <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+					<li><a href="#">Etudiants</a></li>
+					<li><a href="#">Enseignants</a></li>
+					<li><a href="#">Resp. de Formation</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i class='bx bxs-chart icon' ></i>Gestion des Formations</a></li>
+			<li><a href="#"><i class='bx bxs-widget icon' ></i>Gestion des UEs & ECs</a></li>
+			<li>
+				<a href="#"><i class='bx bxs-inbox icon' ></i> Gestion des Présences <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+					<li><a href="#">Etudiants</a></li>
+					<li><a href="#">Enseignants</a></li>
+					<li><a href="#">Historique</a></li>
+				</ul>
+			</li>	
+		</ul>
+		
+	</section>
+	<!-- SIDEBAR -->
 
-                    <div class="profile-action">
-                        <a href="" class="btn btn-white">
-                            <span class="las la-coins"></span>
-                            $2,300
-                        </a>
-                    </div>
+	<!-- NAVBAR -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu toggle-sidebar' ></i>
+			<form action="#">
+				<div class="form-group" style="display: none;">
+					<input type="text" placeholder="Search...">
+					<i class='bx bx-search icon' ></i>
+				</div>
+			</form>
+			<a href="#" class="nav-link">
+				<i class='bx bxs-bell icon' ></i>
+				<span class="badge">5</span>
+			</a>
+			<!-- <a href="#" class="nav-link">
+				<i class='bx bxs-message-square-dots icon' ></i>
+				<span class="badge">8</span>
+			</a> -->
+			<span class="divider"></span>
+			<div class="profile">
+				<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+				<ul class="profile-link">
+					<li><a href="#"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
+					<li><a href="#"><i class='bx bxs-cog' ></i> Settings</a></li>
+					<li><a href="#"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- NAVBAR -->
 
-                    <div class="profile-icons">
-                        <span class="las la-user"></span>
-                        <span class="las la-comment-alt"></span>
-                        <span class="las la-file-invoice"></span>
-                    </div>
+		<!-- MAIN -->
+		<main>
+			<h1 class="title">Dashboard</h1>
+			<ul class="breadcrumbs">
+				<li><a href="#">Home</a></li>
+				<li class="divider">/</li>
+				<li><a href="#" class="active">Dashboard</a></li>
+			</ul>
+			<div class="info-data">
+				<div class="card">
+					<div class="head">
+						<div>
+							<h2>300</h2>
+							<p>Etudiants</p>
+						</div>
+						<i class='bx bx-trending-up icon' ></i>
+					</div>
+					<!-- <span class="progress" data-value="40%"></span>
+					<span class="label">40%</span> -->
+				</div>
+				<div class="card">
+					<div class="head">
+						<div>
+							<h2>32</h2>
+							<p>Enseignant</p>
+						</div>
+						<i class='bx bx-trending-down icon down' ></i>
+					</div>
+					<!-- <span class="progress" data-value="60%"></span>
+					<span class="label">60%</span> -->
+				</div>
+				<div class="card">
+					<div class="head">
+						<div>
+							<h2>12</h2>
+							<p>Formations</p>
+						</div>
+						<i class='bx bx-trending-up icon' ></i>
+					</div>
+					<!-- <span class="progress" data-value="30%"></span>
+					<span class="label">30%</span> -->
+				</div>
+				<div class="card">
+					<div class="head">
+						<div>
+							<h2>2</h2>
+							<p>Séances en cours</p>
+						</div>
+						<i class='bx bx-trending-up icon' ></i>
+					</div>
+					<!-- <span class="progress" data-value="80%"></span>
+					<span class="label">80%</span> -->
+				</div>
+			</div>
+			<div class="data">
+				<div class="content-data">
+					<div class="head">
+						<h3>Courbes d'évolution de la présence des étudiants et enseignants en fonction des semestres </h3>
+						<div class="menu">
+							<i class='bx bx-dots-horizontal-rounded icon'></i>
+							<ul class="menu-link">
+								<li><a href="#">Edit</a></li>
+								<li><a href="#">Save</a></li>
+								<li><a href="#">Remove</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="chart">
+						<div id="chart"></div>
+					</div>
+				</div>
+				<div class="content-data" style="display: none;">
+					<div class="head">
+						<h3>Chatbox</h3>
+						<div class="menu">
+							<i class='bx bx-dots-horizontal-rounded icon'></i>
+							<ul class="menu-link">
+								<li><a href="#">Edit</a></li>
+								<li><a href="#">Save</a></li>
+								<li><a href="#">Remove</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="chat-box" >
+						<p class="day"><span>Today</span></p>
+						<div class="msg">
+							<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+							<div class="chat">
+								<div class="profile">
+									<span class="username">Alan</span>
+									<span class="time">18:30</span>
+								</div>
+								<p>Hello</p>
+							</div>
+						</div>
+						<div class="msg me">
+							<div class="chat">
+								<div class="profile">
+									<span class="time">18:30</span>
+								</div>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatum eos quam dolores eligendi exercitationem animi nobis reprehenderit laborum! Nulla.</p>
+							</div>
+						</div>
+						<div class="msg me">
+							<div class="chat">
+								<div class="profile">
+									<span class="time">18:30</span>
+								</div>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, architecto!</p>
+							</div>
+						</div>
+						<div class="msg me">
+							<div class="chat">
+								<div class="profile">
+									<span class="time">18:30</span>
+								</div>
+								<p>Lorem ipsum, dolor sit amet.</p>
+							</div>
+						</div>
+					</div>
+					<form action="#">
+						<div class="form-group">
+							<input type="text" placeholder="Type...">
+							<button type="submit" class="btn-send"><i class='bx bxs-send' ></i></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- NAVBAR -->
 
-                </div>
-
-                <div class="sidebar-menu">
-
-                    <div class="menu-item">
-                      <a href="" class="active">
-                        <span class="las la-home"></span>
-                        <span class="menu-text">Home</span> 
-                      </a>  
-                    </div>
-
-                    <div class="menu-item">
-                      <a href="">
-                        <span class="las la-user"></span>
-                        <span class="menu-text">Profile</span> 
-                      </a>
-                    </div>
-
-                    <div class="menu-item">
-                      <a href="">
-                        <span class="las la-project-diagram"></span>
-                        <span>Projects</span> 
-                      </a>
-                    </div>
-
-                    <div class="menu-item">
-                        <a href="">
-                          <span class="las la-tasks"></span>
-                          <span>Tasks</span> 
-                        </a>
-                      </div>
-
-                      <div class="menu-item">
-                        <a href="">
-                          <span class="las la-columns"></span>
-                          <span>Kanban</span> 
-                        </a>
-                      </div>
-
-                      <div class="menu-item">
-                        <a href="">
-                          <span class="las la-user-cog"></span>
-                          <span>Users</span> 
-                        </a>
-                      </div>
-
-                      <div class="menu-item">
-                        <a href="">
-                          <span class="las la-user-ninja"></span>
-                          <span>Profile</span> 
-                        </a>
-                      </div>
-
-                      <div class="menu-item">
-                        <a href="">
-                          <span class="las la-file-invoice"></span>
-                          <span>Invoices</span> 
-                        </a>
-                      </div>
-
-                      <div class="menu-item">
-                        <a href="">
-                          <span class="las la-cogs"></span>
-                          <span>Widgets</span> 
-                        </a>
-                      </div>
-                    </div>
-
-                      <div class="sidebar-card">
-                          <h3>Hello Parker</h3>
-                          <p>You are yet to complete certain tasks that are assigned to you and haven't update the product manager</p>
-                          <a href="" class="btn btn-block btn-white">Get started</a>
-                    </div>
-                </div>
-
-                    <div class="main-content">
-
-                        <header>
-                            <label for="menu-toggle">
-                                <span class="las la-bars"></span>
-                            </label>
-
-                            <div class="head-icons">
-                                <span class="la la-search"></span>
-                                <span class="las la-comment-alt"></span>
-                                <span class="las la-bell"></span>
-                                
-                                <div class="head-avatar">
-                                    <div class="avatar" style="background-image: url(img/fadel.jpg);"></div>
-                                    <span>Fadel GUEYE</span>
-                                </div>
-
-                            </div>
-
-                        </header>
-
-                        <main>
-                            <div class="page-header">
-                                <h1>Morning Heather</h1>
-                                <small>Have a nice day</small>
-                            </div>
-                            <div class="analytics">
-                                <div class="card engage-card">
-                    
-                                    <div class="card-head">
-                                        Engagement
-                                    </div>
-                                    <div class="card-body">
-                                        <div id="chart"></div>
-                                    </div>
-                                </div>
-                                <div class="card emails-card">
-                                    
-                                </div>
-                            </div>
-                        </main>
-                    </div>
-                      
-
-        </div>
-
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script>
-        let options = {
-            chart: {
-                type: 'line'
-            },
-            stroke: {
-                width: [3, 3, 3, 3],
-                curve: 'smooth',
-                colors:["#6E00FF"]
-            },
-            series: [{
-                name: 'engagement',
-                data: [5,3,10,8,29,19,22,8]
-            }],
-            xaxis: {
-                categoriess: ["Feb","Mar","April","May","June","Jul","Aug"]
-            }
-            }
-
-            var chart = new ApexCharts(document.querySelector("#chart"), options);
-
-chart.render();
-    </script>
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script src="script.js"></script>
 </body>
 </html>
